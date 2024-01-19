@@ -68,7 +68,7 @@ if(HAVE_OPENEXR)
 endif()
 
 if(HAVE_PNG OR HAVE_TIFF OR HAVE_OPENEXR)
-  list(APPEND GRFMT_LIBS ZLIB:zlibstatic)
+  list(APPEND GRFMT_LIBS "${ZLIB_LIBRARIES}")
 endif()
 
 if(HAVE_GDAL)
